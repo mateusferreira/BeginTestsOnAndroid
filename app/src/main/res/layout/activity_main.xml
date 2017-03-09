@@ -1,75 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fontSizeText"
+        android:gravity="center"
+        android:background="@color/backText"
+        android:text ="DEVICE" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text = "my device" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fontSizeText"
+        android:gravity="center"
+        android:background="@color/backText"
+        android:text ="WRITE/READ MESSAGE" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text = "message for send" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="send" />
+</LinearLayout>
+    <!--test 1-->
+<!--LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text ="to" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "subject" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:text="message" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text = "Settings"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="send" />
+</LinearLayout-->
+
+<!--Test 2-->
+<!-- gravity is different of layout_gravity -->
+<!--LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@color/colorMyOption"
     android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:orientation="horizontal"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
         <TextView
             android:id="@+id/tvCodigo"
             android:layout_height="wrap_content"
-            android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_width="100dp"
             android:gravity="right"
-            android:textSize="12dp"
-            android:text="Código :" />
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/fontSizeText"
+            android:text="Código :"/>
 
-        <EditText
-            android:id="@+id/etCodigo"
-            android:layout_height="30dp"
-            android:layout_width="0dp"
-            android:background="@color/colorPrimary"
-            android:layout_weight="4"/>
-    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etCodigo"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+</LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:orientation="horizontal"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
 
         <TextView
             android:id="@+id/tvNome"
             android:layout_height="wrap_content"
-            android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_width="100dp"
             android:gravity="right"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/fontSizeText"
             android:text="Nome :" />
 
         <EditText
             android:id="@+id/etNome"
             android:layout_height="wrap_content"
-            android:layout_width="0dp"
-            android:layout_weight="4"/>
+            android:layout_width="match_parent" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout3"
+    android:id="@+id/linearLayout3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right">
+
+    <Button
+        android:id="@+id/btnConfirmar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="right">
+        android:text="Confirmar" />
 
-        <Button
-            android:id="@+id/btnConfirmar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Confirmar" />
-
-        <Button
-            android:id="@+id/btnCancelar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cancelar" />
-    </LinearLayout>
-
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar" />
 </LinearLayout>
+
+</LinearLayout-->
 
